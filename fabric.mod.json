@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "autotrade",
+  "version": "${version}",
+  "name": "Auto Trade",
+  "description": "Select a villager trade, toggle Auto Trade, and automatically repeat the trade.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.autotrade.AutoTradeClient"
+    ]
+  },
+  "mixins": [
+    "autotrade.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
